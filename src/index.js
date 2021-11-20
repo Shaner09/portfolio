@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ProvideData } from './useData';
 
 ReactDOM.render(
   <React.StrictMode>
+    <ProvideData>
+    <div style={{background:'#F5F8DE', height:'100vh'}}>
     <App />
+    </div>
+    </ProvideData>
   </React.StrictMode>,
   document.getElementById('root')
 );
