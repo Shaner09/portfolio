@@ -3,10 +3,12 @@ import { Navbar, Nav, Button, Figure, Image, Container, Row, Col } from 'react-b
 
 function Resume() {
   return (
-    <Container style={{borderBottom:'5px solid #355e3b',background:'#F5F8DE'}}>
-      <h2>Links:</h2>
+    <Container className="Links invis">
+      <div className="title"><div>Links:</div><span className="blinker">|</span></div>
+    <Container className="section" style={{width:"90vw"}}>
       <div><a href={'https://github.com/Shaner09'}>Github profile</a></div>
       <div><a href='resume4.pdf'>Resume</a></div>
+</Container>
 </Container>
   );
 }

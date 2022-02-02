@@ -10,10 +10,10 @@ import useProvideData from './useData';
 function App() {
   const {state} = useProvideData()
   return (
-    <div className="App" >
+    <div className="App">
           <Header></Header>
           <Intro></Intro>
-          {state.displayedSections==='All' || state.displayedSections==='Technical Skills'? <TechnicalSkills></TechnicalSkills> : null}
+<TechnicalSkills></TechnicalSkills>
           {state.displayedSections==='All' || state.displayedSections==='About Me'? <About></About> : null}
           {state.displayedSections==='All' || state.displayedSections==='Links'? <Resume></Resume> : null}
           {state.displayedSections==='All' || state.displayedSections==='Portfolio'? <Portfolio></Portfolio> : null}

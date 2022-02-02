@@ -7,7 +7,7 @@ import { ProvideData } from './useData';
 ReactDOM.render(
   <React.StrictMode>
     <ProvideData>
-    <div style={{background:'#F5F8DE', height:'100vh'}}>
+    <div >
     <App />
     </div>
     </ProvideData>

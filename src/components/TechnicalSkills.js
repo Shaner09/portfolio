@@ -3,22 +3,23 @@ import { Navbar, Nav, Button, Figure, Image, Container, Row, Col } from 'react-b
 
 function TechnicalSkills() {
   return (
-    <Container style={{borderBottom:'5px solid #355e3b',background:'#F5F8DE'}}>
-      <Row>
-        <Col xs={5} style={{display:'flex', flexDirection:'column', justifyContent:'center', padding:'0px'}}>
-    <h2>Technical Skills: </h2>
-    </Col>
-    <Col xs={7}>
-    <ul style={{listStyleType:'none'}}>
-      <li>React</li>
-      <li>JavaScript</li>
-      <li>HTML/CSS</li>
-      <li>MongoDB</li>
-      <li>VS Code</li>
-    </ul>
-    </Col>
-    </Row>
-</Container>
+    <Container className="Technical invis">
+      <div className="title"><div>Technical Skills:</div><span className="blinker">|</span></div>
+      <Container className="section" style={{width:"90vw"}}>
+        <Row style={{padding:"10px"}}>
+          <Col xs={6} style={{display:'flex', flexDirection:'column', justifyContent:'center', padding:'0px'}}>
+            <div style={{width:"max-content"}}><img src="/react.png" style={{height:"40px", width:"40px"}}></img>React</div>
+            <div style={{width:"max-content"}}><img src="/react.png" style={{height:"40px", width:"40px"}}></img>Javascript</div>
+            <div style={{width:"max-content"}}><img src="/react.png" style={{height:"40px", width:"40px"}}></img>Node.js</div>
+          </Col>
+          <Col xs={6}>
+            <div style={{width:"max-content"}}><img src="/react.png" style={{height:"40px", width:"40px"}}></img>HTML/CSS</div>
+            <div style={{width:"max-content"}}><img src="/react.png" style={{height:"40px", width:"40px"}}></img>MongoDB</div>
+            <div style={{width:"max-content"}}><img src="/react.png" style={{height:"40px", width:"40px"}}></img>Java</div>
+          </Col>
+        </Row>
+      </Container>
+    </Container>
   );
 }
 
