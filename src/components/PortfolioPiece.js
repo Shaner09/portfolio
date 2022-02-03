@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Navbar, Nav, Button, Figure, Image, Row, Col } from 'react-bootstrap'
 import { FaArrowLeft, FaArrowRight, FaBars, FaStackExchange, FaUserAlt } from "react-icons/fa";
 
-function Unhinderd() {
-  const images = ["/unhinderdpic3.jpeg", "/unhinderdpic2.jpeg", "/unhinderdpic1.jpeg"]
+function PortfolioPiece(props) {
+  const images = props.images
   const [image, setImage] = useState(images[0])
   const [imageIndex, setImageIndex] = useState(0)
   const [ignore, _setIgnore] = useState(false)
@@ -36,16 +36,16 @@ function Unhinderd() {
   return (
     <div className="section" style={{width:"90vw", marginBottom:"20px"}} onClick={()=>sectionClick()}>
 
-        <h5><u>unhinderd</u></h5>
-        <div style={{}}>
-        <Button style={{zIndex:"1", marginRight:"-40px", position:"relative", height:"40px", width:"40px", background:"rgba(0, 0, 0, .5)", border:"none"}} onClick={()=>arrowClick("left")}><FaArrowLeft/></Button>
-        <Image src={image} style={{maxWidth:'80vw', maxHeight:"80vh", zIndex:"2"}}></Image>
-        <Button style={{zIndex:"5",border:"none", position:"relative", marginLeft:"-40px", height:"40px", width:"40px", background:"rgba(0, 0, 0, .5)"}} onClick={()=>arrowClick("right")}><FaArrowRight/></Button>
+        <a href={props.link} style={{color:"white", fontSize:"24px"}}><u>{props.title}</u></a>
+        <div >
+        <Button style={{marginRight:"-40px", position:"relative", height:"40px", width:"40px", background:"rgba(0, 0, 0, .5)", border:"none"}} onClick={()=>arrowClick("left")}><FaArrowLeft/></Button>
+        <Image onClick={()=>window.location.href=props.link} src={image} style={{maxWidth:'80vw', maxHeight:"80vh"}}></Image>
+        <Button style={{border:"none", position:"relative", marginLeft:"-40px", height:"40px", width:"40px", background:"rgba(0, 0, 0, .5)"}} onClick={()=>arrowClick("right")}><FaArrowRight/></Button>
         </div>
-        <p>unhinderd is a messaging app that handles translations behind the scenes for seamless communication between people who would otherwise have a difficult time doing so. This app uses the google translate api to translate to and from over 100 different languages!</p>
+        <p style={{marginTop:"10px"}}>{props.description}</p>
       </div>
     
   );
 }
 
-export default Unhinderd;
+export default PortfolioPiece;
