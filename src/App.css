@@ -15,6 +15,9 @@
   color:white;
   margin:20px auto;
   padding:0px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 .blinker {
   background:#41FF00;
@@ -49,4 +52,24 @@
   50% {
     background:transparent;
   }
+}
+
+.unhinderd {
+  background-image :url("./icons/unhinderdpic1.jpeg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center ;
+}
+
+.description {
+  display:flex;
+  align-items:center;
+  color:#41FF00;
+  font-size:16px;
+  background:rgba(0, 0, 0, .5);
+  margin:0px;
+  padding:5px 20px;
+  border-radius:10px;
+  width:max-content;
+  font-family:Cascadia Code;
 }

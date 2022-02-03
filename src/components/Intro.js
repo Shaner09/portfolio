@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, Button, Figure, Image, Container, Row, Col } from 'react-bootstrap'
+import { Navbar, Nav, Button, Figure, Image, Row, Col } from 'react-bootstrap'
 
 function Intro() {
   return (
-    <Container className="Intro invis" style={{marginTop:"10px"}}>
-    <Container className="section" style={{width:"90vw"}}>
+    <div className="Intro invis" style={{marginTop:"10px"}}>
+    <div className="section" style={{width:"90vw"}}>
   <Row> 
     <Col xs={4} md={4} style={{padding:'0px'}}>
     <Image src={'/resumepic.jpeg'} style={{margin:'5%', width:'90%', height:'90%'}} rounded></Image>
@@ -14,8 +14,8 @@ function Intro() {
       <div>Full-Stack Software Engineer</div>
     </Col>
   </Row>
-</Container>
-</Container>
+</div>
+</div>
   );
 }
 
