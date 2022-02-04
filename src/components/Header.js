@@ -14,7 +14,7 @@ function Header() {
   return (
     <div style={{height:"10vh"}}>
     <Navbar
-      style={{ background: "#355e3b", color: "white", height:"10vh", paddingLeft:'3vw', borderBottom:"3px solid black", borderBottomLeftRadius:"5px", borderBottomRightRadius:"5px"}}
+      style={{ background: "#355e3b", color: "white", height:"10vh", paddingLeft:'3vw', borderBottom:"3px solid black", borderBottomLeftRadius:"5px", borderBottomRightRadius:"5px", display: "flex", justifyContent:"space-between"}}
       bg="header"
       expand="lg"
       fixed="top"

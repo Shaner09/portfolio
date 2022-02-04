@@ -37,6 +37,7 @@ function PortfolioPiece(props) {
     <div className="section" style={{width:"90vw", marginBottom:"20px"}} onClick={()=>sectionClick()}>
 
         <a href={props.link} style={{color:"white", fontSize:"24px"}}><u>{props.title}</u></a>
+        <div><a href={props.link} style={{color:"white", fontSize:"16px"}}><u>Link</u></a></div>
         <div >
         <Button style={{marginRight:"-40px", position:"relative", height:"40px", width:"40px", background:"rgba(0, 0, 0, .5)", border:"none"}} onClick={()=>arrowClick("left")}><FaArrowLeft/></Button>
         <Image onClick={()=>window.location.href=props.link} src={image} style={{maxWidth:'80vw', maxHeight:"80vh", cursor:"pointer"}}></Image>
