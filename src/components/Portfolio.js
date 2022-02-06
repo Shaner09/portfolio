@@ -7,7 +7,7 @@ function Portfolio() {
   return (
     <div className="Portfolio invis" style={{marginBottom:"0px"}}>
       <div className="title"><div>Portfolio:</div><span className="blinker2">|</span></div>
-      <PortfolioPiece images={["/resume.png"]} title="Resume" description="my resume" link="resume4.pdf"/>
+      <PortfolioPiece images={["/resume.png"]} title="Resume" description="my resume" link="resume.pdf"/>
 
       <PortfolioPiece images={["/github.png"]} title="Github" description="My github profile" link="https://github.com/Shaner09"/>
 
