@@ -7,7 +7,7 @@ function Resume() {
       <div className="title"><div>Links:</div><span className="blinker">|</span></div>
     <div className="section" style={{width:"90vw"}}>
       <div><a href={'https://github.com/Shaner09'}>Github profile</a></div>
-      <div><a href='resume4.pdf'>Resume</a></div>
+      <div><a href='resume.pdf'>Resume</a></div>
 </div>
 </div>
   );
