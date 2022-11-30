@@ -20,7 +20,7 @@ function Header() {
       fixed="top"
     >
         <div style={{ color: "white", fontSize: "16px", padding:'0px'}}>
-          <u>shanerichter09@yahoo.com</u>
+          <u>shanerichter09@gmail.com</u>
         </div>
         <Dropdown style={{paddingRight:"3vw"}}>
         <Dropdown.Toggle
