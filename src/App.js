@@ -28,7 +28,7 @@ function App() {
               <Header></Header>
               <Intro></Intro>
               <TechnicalSkills></TechnicalSkills>
-              <About></About>
+              {/* <About></About> */}
               {/* <Resume></Resume> */}
               <Portfolio></Portfolio>
             </div>

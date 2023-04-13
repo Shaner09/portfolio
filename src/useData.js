@@ -1,7 +1,7 @@
 import React, { useReducer, useContext, createContext} from 'react'
 
 const initialState = {
-  sections: ['Intro', 'Technical Skills', 'About Me', 'Portfolio'],
+  sections: ['Intro', 'Technical Skills', 'Portfolio'],
   displayedSections: 'All',
 }
 
